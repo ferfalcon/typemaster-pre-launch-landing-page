@@ -1,9 +1,41 @@
 :root{
+	/* TYPOGRAPHY */
+	/* Family */
+	--ff-main: "Barlow", sans-serif;
+
+	/* Wieght */
+	--fw-medium: 500;
+	--fw-block: 900;
+
+	/* Size */
+	--fs-300: 1rem;			/*	16px */
+	--fs-400: 1.5rem;		/*	24px */
+	--fs-600: 2rem;			/*	32px */
+	--fs-800: 3rem;			/*	48px */
+	--fs-900: 3.5rem;		/*	56px */
+
+	/* Line height */
+	--lh-100: 1;
+	--lh-200: 1.125;
+	--lh-300: 1.167;
+	--lh-800: 1.625;
+
+	/* Typographic elements */
+	--ty-heading-primary: var(--fw-block) var(--fs-800)/var(--lh-100) var(--ff-main);
+	--ty-heading-secondary: var(--fw-block) var(--fs-600)/var(--lh-200) var(--ff-main);
+	--ty-heading-tertiary: var(--fw-block) var(--fs-400)/var(--lh-300) var(--ff-main);
+	--ty-copy: var(--fw-medium) var(--fs-300)/var(--lh-800) var(--ff-main);
+	--ty-button: var(--fw-block) var(--fs-300) var(--ff-main);
+	--ty-footer-highlight: var(--fw-bold) var(--fs-300) var(--ff-main);
+
+	/* COLOURS */
+	/* Neutral */
 	--cl-neutral-100: hsl(0 0% 100%);
 	--cl-neutral-200: hsl(198 28% 93%);
 	--cl-neutral-400: hsl(221 25% 58%);
 	--cl-neutral-800: hsl(220 50% 17%);
-
+	
+	/* // Accent */
 	--cl-accent-300: hsl(22 100% 69%);
 	--cl-accent-500: hsl(22 89% 52%);
 }
