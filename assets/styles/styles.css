@@ -5,7 +5,8 @@
 
 	/* Wieght */
 	--fw-medium: 500;
-	--fw-block: 900;
+	--fw-bold: 700;
+	--fw-black: 900;
 
 	/* Size */
 	--fs-300: 1rem;			/*	16px */
@@ -21,11 +22,11 @@
 	--lh-800: 1.625;
 
 	/* Typographic elements */
-	--ty-heading-primary: var(--fw-block) var(--fs-800)/var(--lh-100) var(--ff-main);
-	--ty-heading-secondary: var(--fw-block) var(--fs-600)/var(--lh-200) var(--ff-main);
-	--ty-heading-tertiary: var(--fw-block) var(--fs-400)/var(--lh-300) var(--ff-main);
+	--ty-heading-primary: var(--fw-black) var(--fs-800)/var(--lh-100) var(--ff-main);
+	--ty-heading-secondary: var(--fw-black) var(--fs-600)/var(--lh-200) var(--ff-main);
+	--ty-heading-tertiary: var(--fw-black) var(--fs-400)/var(--lh-300) var(--ff-main);
 	--ty-copy: var(--fw-medium) var(--fs-300)/var(--lh-800) var(--ff-main);
-	--ty-button: var(--fw-block) var(--fs-300) var(--ff-main);
+	--ty-button: var(--fw-bold) var(--fs-300) var(--ff-main);
 	--ty-footer-highlight: var(--fw-bold) var(--fs-300) var(--ff-main);
 
 	/* COLOURS */
@@ -34,7 +35,7 @@
 	--cl-neutral-200: hsl(198 28% 93%);
 	--cl-neutral-400: hsl(221 25% 58%);
 	--cl-neutral-800: hsl(220 50% 17%);
-	
+
 	/* // Accent */
 	--cl-accent-300: hsl(22 100% 69%);
 	--cl-accent-500: hsl(22 89% 52%);
@@ -47,12 +48,77 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  font-style: italic;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
 }
+
+h1, h2, h3 {
+	color: var(--cl-neutral-800);
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h1 {
+	font: var(--ty-heading-primary);
+}
+	
+h2 {
+	font: var(--ty-heading-secondary);
+}
+		
+h3 {
+	font: var(--ty-heading-tertiary);
+}
+
+.body {
+	font-family: var(--ff-main);
+	font-size: var(--fs-300);
+	color: var(--cl-neutral-400);
+	background: var(--cl-neutral-100);
+	display: grid;
+	align-content: center;
+	margin: 0;
+	min-height: 100svh;
+	scrollbar-gutter: stable;
+}
+
+.typemaster {
+	display: grid;
+	align-items: center;
+
+	grid-template-columns: 
+		minmax(0, auto) 
+		minmax(0, 1rem)
+		minmax(min-content, max(20.4375rem))
+		minmax(0, 1rem) 
+		minmax(0, auto);
+
+	& > * {
+		grid-column: 3;
+	}
+}
+
+.typemaster__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.5rem;
+}
+
+.typemaster__button {
+	font: var(--ty-button);
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: .91rem .889rem;
+	border-radius: .5rem;
+	background: var(--cl-neutral-200);
+}
+
+
+
