@@ -72,16 +72,6 @@ picture {
 	border-radius: 1.125rem;
 }
 
-h3 {
-	text-transform: uppercase;
-	margin: 0;
-}
-
-		
-h3 {
-	font: var(--ty-heading-tertiary);
-}
-
 .body {
 	font-family: var(--ff-main);
 	font-size: var(--fs-300);
@@ -224,4 +214,34 @@ h3 {
 		mix-blend-mode: multiply;
 		opacity: .7486;
 	}
+}
+
+.typemaster-features {
+	display: grid;
+	gap: 4rem;
+	text-align: center;
+	width: 100%;
+	max-width: var(--content-width);
+	margin: 7rem auto;
+}
+
+.typemaster-features__image {
+	width: 4rem;
+	aspect-ratio: 1;
+	align-content: center;
+	background: var(--cl-accent-500);
+	border-radius: 1rem;
+	margin: auto;
+}
+
+.typemaster-features__heading {
+	font: var(--ty-heading-tertiary);
+	color: var(--cl-neutral-800);
+	text-transform: uppercase;
+	margin: 3rem auto 0;
+}
+
+.typemaster-features__copy {
+	font: var(--ty-copy);
+	margin: 1.5rem auto 0;
 }
