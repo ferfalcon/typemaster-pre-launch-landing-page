@@ -222,7 +222,7 @@ picture {
 	text-align: center;
 	width: 100%;
 	max-width: var(--content-width);
-	margin: 7rem auto;
+	margin: 7rem auto 0;
 }
 
 .typemaster-features__image {
@@ -244,4 +244,9 @@ picture {
 .typemaster-features__copy {
 	font: var(--ty-copy);
 	margin: 1.5rem auto 0;
+}
+
+.typemaster-footer {
+	text-align: center;
+	margin-top: 6rem;
 }
